@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
@@ -153,8 +154,7 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
-        month = months.index(month) + 1  # dt.month creates values from 1 to 12
+        month = MONTH_LIST.index(month) + 1  # dt.month creates values from 1 to 12
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
@@ -262,6 +262,7 @@ def print_dataset(df):
         else:
             n += 5
             continue
+
 
 def main():
     while True:
