@@ -247,7 +247,7 @@ def user_stats(df):
 
 
 def print_dataset(df):
-    """"Print 5 rows of a given dataset at a time by clicking enter until user input to stop."""
+    """"Print 5 rows of a given dataset at a time by clicking and ask to user to continue or stop."""
 
     print("Press enter to see 5 additional rows of the dataset.\n")
     n = 0
