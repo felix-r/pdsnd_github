@@ -20,7 +20,12 @@ DAY_LIST = ['monday', 'm',
 
 
 def get_month():
-    """Return month from user input."""
+    """
+    Return month from user input.
+
+    Returns:
+        (str) month - name of month
+    """
 
     print("Which month - January, February, March, April, May, or June?")
     err_msg = "Sorry, I didn't understand that. Please choose an input from {}".format(str(MONTH_LIST))
@@ -35,7 +40,12 @@ def get_month():
 
 
 def get_day():
-    """Return weekday from user input."""
+    """
+    Return weekday from user input.
+
+    Returns:
+        (str) weekday - name of weekday
+    """
 
     print("Which day - Monday (M), Tuesday (Tu), Wednesday (W), Thursday (Th), Friday (F), Saturday (Sa), "
           "or Sunday (Su)?")
