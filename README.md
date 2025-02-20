@@ -7,3 +7,6 @@ Running the python script will give descriptive statistics for bike rentals in C
 
 ### Files used
 Uses data `chicago.csv`, `new_york_city.csv`, `washington.csv`
+
+### Contributers
+felix-r
